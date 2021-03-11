@@ -9,5 +9,9 @@
     },
     "chrome_url_overrides" : {
         "newtab": "index.html"
+    },
+    "icons": { "16": "Codesmith_16_16.png",
+            "48": "Codesmith_32_32.png",
+           "128": "Codesmith_48_48.png"
     }
   }
