@@ -1,5 +1,6 @@
 
 document.addEventListener('DOMContentLoaded', () => {
+    let userName = 'guest';
   // Initial: load messages
   getMessages();
     document.querySelectorAll("#btn-msg").forEach(item => {
@@ -9,6 +10,17 @@ document.addEventListener('DOMContentLoaded', () => {
             setTimeout(()=> getMessages(),1000);
         });
     });
+
+    document.querySelectorAll("#btn-username").forEach(item => {
+        item.addEventListener('click', event => {
+            event.preventDefault();
+            changeName();
+        });
+    });
+    
+    function changeName() {
+        userName = document.querySelector('#submit-username').value;
+    }
 
     function getMessages() {
 
@@ -57,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // const value = ('#submit-msg').val();
         const value = document.querySelector('#submit-msg').value;
         const data = JSON.stringify({
-            'created_by': 'Roger',
+            'created_by': userName,
             'message': value
             })
         // ('#submit-msg').val('');
