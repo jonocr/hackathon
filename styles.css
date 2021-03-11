@@ -1,0 +1,24 @@
+.chat-container {
+    background-color: #F1F1F1;
+    color: #DAAD8F;
+    height: 300px;
+    width: 800px;
+    display: block;
+    overflow:auto;
+
+}
+
+.message-container {
+    display: block;
+}
+ .user {
+    display: inline-block;
+    font-weight: 600;
+ }
+
+ .message {
+    display: inline-block;
+ }
+/* #F1F1F1 */
+
+/* #DAAD8F */

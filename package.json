@@ -1,0 +1,23 @@
+{
+  "name": "w1-s2-calendar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha-phantomjs --ignore-ssl-errors=true --web-security=no --ssl-protocol=any ./index.html",
+    "start": "node server/server.js"
+  },
+  "preinstall": "brew update && brew install phantomjs",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "expect": "^1.20.2",
+    "express": "^4.13.3",
+    "jquery": "^2.2.4",
+    "mocha": "^2.5.3",
+    "mocha-phantomjs": "^4.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.12.1"
+  }
+}
