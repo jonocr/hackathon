@@ -2,12 +2,13 @@
 document.addEventListener('DOMContentLoaded', () => {
     let userName = 'guest';
   // Initial: load messages
-  getMessages();
+  setInterval(()=>getMessages(),1500);
+//   getMessages();
     document.querySelectorAll("#btn-msg").forEach(item => {
         item.addEventListener('click', event => {
             event.preventDefault();
             submitMessages();
-            setTimeout(()=> getMessages(),1000);
+            // setTimeout(()=> getMessages(),1000);
         });
     });
 
@@ -19,7 +20,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     
     function changeName() {
-        userName = document.querySelector('#submit-username').value;
+        if (document.querySelector('#submit-username').value.length > 0){
+            userName = document.querySelector('#submit-username').value;
+            document.querySelector('#submit-username').remove();
+            document.querySelector('#btn-username').remove();
+        }
     }
 
     function getMessages() {

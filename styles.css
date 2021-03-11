@@ -22,3 +22,18 @@
 /* #F1F1F1 */
 
 /* #DAAD8F */
+
+.profile-container {
+    background-color: #fafafa;
+    background-color: rgba(var(--b3f,250,250,250),1);
+    border-radius: 50%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    overflow: hidden;
+    position: relative;
+}
